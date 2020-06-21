@@ -20,10 +20,11 @@
 \usepackage{tabularx}
 
 % Comando per le firme, per aggiungere dei campi Data, decommentare le due righe sotto
-\newcommand*{\SignatureAndDate}[1]{%
+\newcommand*{\SignatureAndDate}[1]{
     \par\noindent\makebox[4.0in]{\hrulefill} %\hfill\makebox[2.0in]{\hrulefill}%
     \par\noindent\makebox[4.0in][l]{#1}      %\hfill\makebox[2.0in][l]{Date}%
-}%
+}
+
 
 \usepackage[
 a4paper,
@@ -36,10 +37,12 @@ textheight=8in,
 footskip=10pt
 ]{geometry}
 
+
 \usepackage[italian]{isodate}
 \usepackage{arydshln}
 \usepackage{hyperref}
 \usepackage{amsfonts, amsmath, amsthm, amssymb}
+
 
 % Specifies custom hyphenation points for words or words that shouldn't be hyphenated at all
 \hyphenation{ionto-pho-re-tic iso-tro-pic fortran} 
@@ -52,12 +55,15 @@ footskip=10pt
 %----------------------------------------------------------------------------------------
 %	PAGE STYLE
 % ---------------------------------------------------------------------------------------
+
 \pagestyle{fancy}
 \fancyhf{}
 \setlength{\headheight}{2cm} 
 
+
 % Delete the paragraph indentation
 \setlength{\parindent}{0pt}
+
 
 %----------------------------------------------------------------------------------------
 %	UNIPD STYLE
@@ -67,43 +73,15 @@ footskip=10pt
     % header
     \lhead{
        \textline[t]{\includegraphics[width=1cm, keepaspectratio=true]{img/UniPd.png}}
-        {Piano di lavoro stage presso \\\ragioneSocAzienda}
+        {Piano di lavoro di stage interno}
         {\nomeStudente\ \cognomeStudente\\ \matricolaStudente}
-    }
+        }
+
 
     % footer
     \rfoot{\thepage/\pageref{LastPage}} %per le prime pagine: mostra solo il numero romano
     \cfoot{}
 
-}
-
-%----------------------------------------------------------------------------------------
-%	COMPANY STYLE
-% ---------------------------------------------------------------------------------------
-
-\newcommand{\stileAziendale}{
-    % Header
-    \lhead{
-        \textline[t]{\includegraphics[width=1cm, keepaspectratio=true]{img/logo_azienda.png}}
-        {\textbf{\ragioneSocAzienda}}
-        {\sitoAzienda}
-    }
-
-
-    %Footer
-    \lfoot{
-        {\fontsize{8}{10}\selectfont
-        \textbf{\ragioneSocAzienda}\\
-        \indirizzoAzienda\\
-        \sitoAzienda\\
-    }
-    }
-
-\cfoot{{\fontsize{8}{10}\selectfont \thepage/\pageref{LastPage}}} %per le prime pagine: mostra solo il numero romano
-
-\rfoot{{\fontsize{8}{10}\selectfont Tel. \telTutorAziendale\\
-        email: \emailAzienda \\
-        \partitaIVAAzienda \\}}
 }
 
 %----------------------------------------------------------------------------------------
@@ -114,16 +92,11 @@ footskip=10pt
     \noindent\parbox[#1]{.333\textwidth}{\raisebox{-0.40\height}{#2}}%
     \parbox[#1]{.333\textwidth}{\centering #3}%
     \parbox[#1]{.333\textwidth}{\raggedleft #4}%
-}
+} 
 
 % Header delle pagine UNIPD style, commentarle se si intende usare lo stile aziendale
 
 \stileUNIPD
-
-% Header delle pagine stile aziendale, usaree, dopo aver chiesto il consenso all'azienda
-% per l'uso del logo e dei dati personali. Commentarle se si intende usare l'UNIPD style
-
-%\stileAziendale
 
 % Line under the heading
 \renewcommand{\headrulewidth}{0.4pt}  
@@ -133,9 +106,8 @@ footskip=10pt
 %-----------------------------------------------------------------------------------------
 
 %***PIÈ DI PAGINA***
-%\lfoot{\includegraphics[keepaspectratio = true, width = 25px] {img/UniPd.png} \textit{\nomeStudente 
-%\cognomeStudente (\matricolaStudente)}\\ \footnotesize{\emailStudente}}
-%\rfoot{\thepage/\pageref{LastPage}} %per le prime pagine: mostra solo il numero romano
+\lfoot{\textline[t]{\includegraphics[keepaspectratio = true, width = 25px] {img/UniPd.png}}\emailStudente}
+\rfoot{\thepage/\pageref{LastPage}} %per le prime pagine: mostra solo il numero romano
 
     
 \renewcommand{\footrulewidth}{0.4pt}   %Linea sopra il piè di pagina
