@@ -2,7 +2,7 @@
 %   USEFUL COMMANDS
 %----------------------------------------------------------------------------------------
 
-\newcommand{\dipartimento}{Dipartimento di Matematica ``Tullio Levi-Civita''}
+\newcommand{\dipartimento}{Dipartimento di Matematica "Tullio Levi-Civita''}
 
 %----------------------------------------------------------------------------------------
 % 	USER DATA
@@ -21,74 +21,120 @@
 
 
 % Dati del Docente Proponente (Docente)
-\newcommand{\titoloDocenteProponente}{Professoressa}
+\newcommand{\titoloDocenteProponente}{Dott.ssa}
 \newcommand{\nomeDocenteProponente}{Francesca}
 \newcommand{\cognomeDocenteProponente}{Collet}
 \newcommand{\emailDocenteProponente}{fcollet@math.unipd.it}
 
 % Dati del Tutor Interno (Docente)
 \newcommand{\titoloTutorInterno}{Professor}
-\newcommand{\nomeTutorInterno}{}
-\newcommand{\cognomeTutorInterno}{}
-\newcommand{\emailTutorInterno}{}
+\newcommand{\nomeTutorInterno}{Alessandro}
+\newcommand{\cognomeTutorInterno}{Sperduti}
+\newcommand{\emailTutorInterno}{sperduti@math.unipd.it}
 
 \newcommand{\prospettoSettimanale}{
 
-    \subsubsection{Prima settimana}
+    \subsubsection{Settimane I, II: catene di Markov}
     \textbf{Obiettivo quindicinale:} acquisizione delle nozioni fondamentali sulle catene di Markov a tempo discreto, omogenee e a stati finiti.
-
+    \\
+    \textbf{Ore di lavoro:} 80.
+    
+    \paragraph{Settimana I - 40 ore}   
     \begin{itemize}
-    	\item 
+    	\item Studio di definizioni e risultati principali relativi ad una catena di Markov:
+    	\begin{itemize}
+    		\item matrice di transizione, proprietà di Markov e distribuzione;
+    		\item transienza e ricorrenza;
+    		\item irriducibilità e aperiodicità;
+    		\item passeggiate aleatorie su grafi.
+    	\end{itemize}
     \end{itemize}
 
-    \subsubsection{Seconda settimana} 
+    \paragraph{Settimana II - 40 ore}
+  
     \begin{itemize}
-        \item 
+        \item Studio del comportamento asintotico di una catena di Markov:
+       \begin{itemize}
+       		\item distribuzione stazionaria;
+       		\item convergenza all’equilibrio;
+       		\item algoritmi \textit{Monte Carlo} per la simulazione di catene di Markov su grafi.
+       \end{itemize} 
+		\item Redazione di una breve relazione che riassuma i concetti e risultati chiave
+visti durante le settimane I, II.
     \end{itemize}
 
-    \subsubsection{Terza settimana}
+    \subsubsection{Settimane III, IV, V, VI: esplorazione di network}
+    \textbf{Obiettivo mensile}: implementazione di un algoritmo di ricerca/navigazione basato su passeggiate aleatorie.
+    \\
+    \textbf{Ore di lavoro:} 160.
+    
+    \paragraph{Settimana III - 40 ore} 
+
     \begin{itemize}
-    	\item 
+    	\item Studio dei contenuti modellistici degli articoli:
+    	\begin{itemize}
+    		\item Riascos and Mateos. \textit{Long-range navigation on complex networks using Lévy
+random walks.} Phys. Rev. E \textbf{86}, 056110 (2012);
+			\item Weng et al. \textit{Navigation by anomalous random walks on complex networks.}
+Sci. Rep. \textbf{6}, 37547 (2016).
+    	\end{itemize}
     \end{itemize}
 
-    \subsubsection{Quarta settimana} 
+    \paragraph{Settimana IV - 40 ore} 
+    
     \begin{itemize}
-        \item 
+        \item Implementazione di un algoritmo per la simulazione di una passeggiata aleatoria (anomala) su un grafo.
     \end{itemize}
 
-    \subsubsection{Quinta settimana} 
+    \paragraph{Settimana V - 40 ore} 
+    
     \begin{itemize}
-        \item 
+        \item \textsc{[continuazione]} Implementazione di un algoritmo per la simulazione di una passeggiata aleatoria (anomala) su un grafo.
+		\item Redazione di una breve relazione che riassuma i contenuti degli articoli studiati durante la settimana III e riporti e spieghi gli algoritmi sviluppati.
     \end{itemize}
 
-    \subsubsection{Sesta settimana} 
+    \paragraph{Settimana VI - 40 ore} 
+    
     \begin{itemize}
-        \item
+        \item Esecuzione di test per il confronto dell’efficienza di navigazione attraverso passeggiate aleatorie semplici e anomale.
+		\item Applicazione all’algoritmo di ricerca \textit{PageRank}.
+		\item Redazione di una breve relazione che contenga un riassunto esaustivo dei test effettuati e dei relativi risultati.
     \end{itemize}
 
-    \subsubsection{Settima settimana} 
+    \subsubsection{Settimane VII, VIII: relazione finale} 
+    \textbf{Obiettivo quindicinale:} considerazioni finali e stesura della documentazione conclusiva.
+    \\
+    \textbf{Ore di lavoro:} 80.
+    
+    \paragraph{Settimana VII - 40 ore}  
+    
     \begin{itemize}
-        \item 
+        \item Discussione dei risultati ottenuti e redazione di una breve relazione di considerazioni finali su tali risultati.
     \end{itemize}
 
-    \subsubsection{Ottava settimana} 
+    \paragraph{Settimana VIII - 40 ore}  
+    
     \begin{itemize}
-        \item 
+    	 \item Raccolta della documentazione prodotta durante le settimane I-VII e redazione di una versione preliminare della relazione finale.
     \end{itemize}
+    
+    \subsection{Estremi temporali}
+    \textbf{Data di inizio del progetto:} 13/07/2020. \\
+    \textbf{Data di fine del progetto:} 04/09/2020.
 }
 
 % Indicare il totale complessivo (deve essere compreso tra le 300 e le 320 ore)
 \newcommand{\totaleOre}{320}
 
 \newcommand{\obiettiviObbligatori}{
-	 \item approfondimento delle catene di Markov a tempo discreto, omogenee e a stati finiti;
-	 \item implementazione di una classe di algoritmi di ricerca/navigazione su classi di \textit{complex network} notevoli;
+	 \item Approfondimento delle catene di Markov a tempo discreto, omogenee e a stati finiti.
+	 \item Implementazione di una classe di algoritmi di ricerca/navigazione su classi di \textit{complex network} notevoli.
 }
 
 \newcommand{\obiettiviDesiderabili}{
-	 \item applicazione all’algoritmo di ricerca \textit{PageRank}.
+	 \item Applicazione dell'algoritmo sviluppato all’algoritmo di ricerca \textit{PageRank}.
 }
 
 \newcommand{\obiettiviFacoltativi}{
-	 \item implementazione di una classe di algoritmi di ricerca/navigazione su classi di \textit{complex network} reali come \textit{web-Standford} o \textit{Ego-Facebook}.
+	 \item Implementazione di una classe di algoritmi di ricerca/navigazione su classi di \textit{complex network} reali come \textit{web-Standford} o \textit{Ego-Facebook}.
 }
